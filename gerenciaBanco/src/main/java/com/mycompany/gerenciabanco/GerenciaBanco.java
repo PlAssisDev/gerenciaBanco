@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author Paulo
+ * @author Paulo  Assis
  */
 
 class Cliente{
@@ -49,9 +49,9 @@ class Cliente{
 public class GerenciaBanco {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Informe seu nome:");
+        System.out.println("Informe seu nome: ");
         String nome = scanner.nextLine();
-        System.out.println("Informe seu sobrenome:");
+        System.out.println("Informe seu sobrenome: ");
         String sobrenome = scanner.nextLine();
         System.out.println("informe seu CPF:");
         String cpf = scanner.nextLine();
@@ -72,18 +72,18 @@ public class GerenciaBanco {
                     cliente.consultarSaldo();
                     break;
                 case 2:
-                   System.out.println("Informe o valor a ser depositado:");
+                   System.out.println("Informe o valor a ser depositado: ");
                    double valorDeposito = scanner.nextDouble();
                    cliente.depositar(valorDeposito);
                    break;
                 case 3:
-                    System.out.println("Informe o valor a ser sacado:");
+                    System.out.println("Informe o valor a ser sacado: ");
                     double valorSaque = scanner.nextDouble();
                     cliente.sacar(valorSaque);
                     break;
                 case 4:
                     continuar = false;
-                    System.out.println("Encerrando a aplicacao");
+                    System.out.println("Encerrando a aplicacao ");
                     break;
                 default:
                     System.out.println("Opcao invalida, tente novamente.");
